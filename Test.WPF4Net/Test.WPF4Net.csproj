@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Shared\Fonts\seguisym.ttf" />
+    <None Remove="Shared\Images\torsten.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Shared\Images\torsten.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MetroChart.WPF4Net\MetroChart.WPF4Net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Shared\Fonts\seguisym.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Generic.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
+</Project>
